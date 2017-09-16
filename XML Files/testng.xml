@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+
+
+
+  <test name="ChromeTestExecution">
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="url" value="https://www.google.com"/>
+    <classes>
+      <class name="TestCases.TestGoogle"/>
+    </classes>
+  </test> 
+  
+  <test name="IETestExecution">
+  <parameter name="browser" value="IE"/>
+  <parameter name="url" value="https://www.google.com"/>
+    <classes>
+      <class name="TestCases.TestGoogle"/>
+    </classes>
+  </test> 
+  
+</suite> 

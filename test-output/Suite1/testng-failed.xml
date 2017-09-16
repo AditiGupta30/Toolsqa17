@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="browser" value="Chrome"/>
+  <test name="ChromeTest1">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestCases.VerifyHomePage"/>
+    </classes>
+  </test> <!-- ChromeTest1 -->
+  <test name="ChromeTest1(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestCases.VerifyHomePage">
+        <methods>
+          <include name="startbrowser"/>
+          <include name="verifyAccountLink"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- TestCases.VerifyHomePage -->
+    </classes>
+  </test> <!-- ChromeTest1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

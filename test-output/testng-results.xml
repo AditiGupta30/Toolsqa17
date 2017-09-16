@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="25584" started-at="2017-09-12T16:43:43Z" finished-at="2017-09-12T16:44:08Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="25584" started-at="2017-09-12T16:43:43Z" finished-at="2017-09-12T16:44:08Z">
+      <class name="TestCases.LoginToStore">
+        <test-method status="PASS" signature="setupReport()[pri:0, instance:TestCases.LoginToStore@6a4f787b]" name="setupReport" is-config="true" duration-ms="163" started-at="2017-09-12T22:13:42Z" finished-at="2017-09-12T22:13:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method status="PASS" signature="startbrowser(java.lang.String)[pri:0, instance:TestCases.LoginToStore@6a4f787b]" name="startbrowser" is-config="true" duration-ms="13082" started-at="2017-09-12T22:13:43Z" finished-at="2017-09-12T22:13:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startbrowser -->
+        <test-method status="FAIL" signature="testInvalidLogin()[pri:0, instance:TestCases.LoginToStore@6a4f787b]" name="testInvalidLogin" duration-ms="6568" started-at="2017-09-12T22:13:56Z" finished-at="2017-09-12T22:14:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at pages.Login.logintoApplication(Login.java:60)
+	at TestCases.LoginToStore.testInvalidLogin(LoginToStore.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method status="PASS" signature="Screenshot(org.testng.ITestResult)[pri:0, instance:TestCases.LoginToStore@6a4f787b]" name="Screenshot" is-config="true" duration-ms="508" started-at="2017-09-12T22:14:02Z" finished-at="2017-09-12T22:14:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=FAILURE method=LoginToStore.testInvalidLogin()[pri:0, instance:TestCases.LoginToStore@6a4f787b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Screenshot -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:TestCases.LoginToStore@6a4f787b]" name="teardown" is-config="true" duration-ms="5411" started-at="2017-09-12T22:14:03Z" finished-at="2017-09-12T22:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="tearDownReports()[pri:0, instance:TestCases.LoginToStore@6a4f787b]" name="tearDownReports" is-config="true" duration-ms="312" started-at="2017-09-12T22:14:08Z" finished-at="2017-09-12T22:14:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReports -->
+      </class> <!-- TestCases.LoginToStore -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
